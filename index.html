@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond Grind</title>
+    <link rel="stylesheet" href="./diamond.css">
+    <link rel="shortcut icon" href="./images/diamondLogo.png">
+</head>
+
+<body>
+    <div class="container">
+        <div id="start">
+            <h1>Diamond Miner</h1>
+            <h1>press "SPACE" to start</h1>
+        </div>
+        <div id="game">
+            <h1>Level <span id="level">1</span></h1>
+            <div class="innerGame">
+                <img src="./images/darkredGem.png" alt="your diamond" id="diamond" onclick="gemClick()">
+                <div class="buttons">
+                    <h1>Income: <span id="income">0</span></h1>
+                    <button id="nextCaveButton">Next cave: <span id="caveCost">5000$</span></button>
+                    <button id="levelUpButton">Level up: <span id="levelCost">200$</span></button>
+                </div>
+            </div>
+        </div>
+        <div id="winDiv">
+            <h1>You win!</h1>
+            <h1>Personal Record: <span id="pr"></span></h1>
+            <button onclick="again()">Again!</button>
+        </div>
+    </div>
+    <script src="./diamond.js"></script>
+</body>
+
+</html>
